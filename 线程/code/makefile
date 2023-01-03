@@ -1,6 +1,6 @@
-pthreadexit:pthread_exit.c
-	gcc -o $@ $^ -lpthread
+pthreadMutex:pthread_mutex.cpp
+	g++ -o $@ $^ -std=c++11 -lpthread
 .PHONY:clean
 clean:
-	rm -rf pthreadexit
+	rm -rf pthreadMutex
 
